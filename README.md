@@ -1,5 +1,10 @@
 # aerobatic_websites
 
+## Install
+
+- First install devtools package with `install.packages("devtools")`
+- Install the add-in: `devtools::install_github("aerobatic/rstudio-addin")`
+
 This R package showcases how RStudio project templates can be defined and
 exposed within R packages. See
 https://rstudio.github.io/rstudio-extensions/rstudio_project_templates.html for

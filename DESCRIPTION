@@ -1,9 +1,9 @@
-Package: aerobatic_websites
+Package: aerobatic.websites
 Title: Aerobatic Sites Addin
 Author: David Von Lehman
 Maintainer: Aerobatic <support@aerobatic.com>
 Version: 0.0.1
-Description: Aerobatic website publishing directly from RStudio
+Description: Aerobatic website publishing directly from RStudio.
 Depends: R (>= 3.3.2)
 License: GPL (>= 2)
 Encoding: UTF-8
