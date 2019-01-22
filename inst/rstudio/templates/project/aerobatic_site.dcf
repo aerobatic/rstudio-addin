@@ -1,0 +1,11 @@
+Binding: create_new_site
+Title: Aerobatic Website
+Subtitle: Simple yet powerful web publishing directly from RStudio
+OpenFiles: index.Rmd, site_config.yaml
+
+Parameter: select
+Widget: SelectInput
+Label: Website Template
+Fields: Simple Site, Slide Presentation, CV plus Blog
+Default: Simple Site
+Position: left
