@@ -15,6 +15,28 @@ create_new_site <- function(path, site_template) {
   # Download the GitHub repo corresponding to the selected site template
 
   print(paste(site_template,1))
-  # write to index file
-  # writeLines(site_template, con = file.path(path, "index.Rmd"))
+
+  # Simple Site, Slide Presentation, CV plus Blog
+  if(site_template == "Professional Blog CV") {
+    repo_name <- "rmarkdown-professional-blog-cv"
+  } else if(site_template == "Slide Presentation") {
+    repo_name <- "rmarkdown-slide-presentation"
+  } else {
+    repo_name <- "rmarkdown-basic-site"
+  }
+
+  repo_url <- paste("https://github.com/aerobatic/", repo_id);
+
+  print(repo_url)
+
+  shell_command <- paste("aero-desktop create --repo", repo, "--directory", getwd())
+
+  print(shell_command)
+
+  # Shell out to aerobatic-desktop passing in the repo URL to clone and install
+  system(shell_command, intern = FALSE,
+       ignore.stdout = FALSE, ignore.stderr = FALSE,
+       wait = TRUE, input = NULL, timeout = 0)
 }
+
+create_new_site("~/src/aerobatic/rstudio-test-site", "Basic Site")

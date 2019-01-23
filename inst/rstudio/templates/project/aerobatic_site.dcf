@@ -6,6 +6,6 @@ OpenFiles: index.Rmd, site_config.yaml
 Parameter: site_template
 Widget: SelectInput
 Label: Website Template
-Fields: Simple Site, Slide Presentation, CV plus Blog
+Fields: Basic Site, Slide Presentation, Professional Blog CV
 Default: Simple Site
 Position: left
