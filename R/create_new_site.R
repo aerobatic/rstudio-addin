@@ -14,6 +14,7 @@ create_new_site <- function(path, site_template) {
 
   # Download the GitHub repo corresponding to the selected site template
 
+  print(paste(site_template,1))
   # write to index file
-  writeLines(site_template, con = file.path(path, "index.Rmd"))
+  # writeLines(site_template, con = file.path(path, "index.Rmd"))
 }
