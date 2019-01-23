@@ -7,7 +7,7 @@
 #
 # The function itself just echos its inputs and outputs to a file called INDEX,
 # which is then opened by RStudio when the new project is opened.
-aerobatic_site <- function(path, site_template) {
+create_new_site <- function(path, site_template) {
 
   # ensure path exists
   dir.create(path, recursive = TRUE, showWarnings = FALSE)
